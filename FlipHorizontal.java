@@ -8,6 +8,6 @@ public class FlipHorizontal extends GraphicsProgram {
 	}
 	
 	private GImage flipHorizontal(GImage image) {
-		
+		return flippedImage;
 	}
 }
