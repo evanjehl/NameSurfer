@@ -4,6 +4,7 @@ import acm.program.*;
 public class FlipHorizontal extends GraphicsProgram {
 	public void run () {
 		GImage flippedImage = flipHorizontal(new GImage("milkmaid.jpg"));
+		print(flippedImage);
 	}
 	
 	private GImage flipHorizontal(GImage image) {
