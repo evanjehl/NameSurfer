@@ -14,5 +14,10 @@ public class NameCounts extends ConsoleProgram {
 				names.put(name, names.get(name) + 1);
 			}
 		}
+		Iterator<String> it = names.keySet().iterator();
+		while (it.hasNext()) {
+			String entry = it.next();
+			println("Entry [" + entry + "] has count " + names.get(entry));
+		}
 	}
 }
