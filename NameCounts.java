@@ -7,7 +7,7 @@ public class NameCounts extends ConsoleProgram {
 		HashMap<String, Integer> names = new HashMap<String, Integer>();
 		while (true) {
 			String name = readLine("Enter name: ");
-			if (name == " ") break;
+			if (name == "") break;
 			if (names.containsKey(name) == false) {
 				names.put(name, 1);
 			} else {
