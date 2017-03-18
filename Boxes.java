@@ -1,5 +1,6 @@
 import acm.program.*;
 import java.awt.event.*;
+import java.util.*;
 import javax.swing.*;
 import acm.graphics.*;
 
@@ -26,4 +27,10 @@ public class Boxes extends GraphicsProgram {
 	private JTextField nameField;
 
 	private static final int MAX_FIELD_SIZE = 30;
+	
+	private static final double BOX_WIDTH = 120;
+	
+	private static final double BOX_HEIGHT = 50;
+	
+	private HashMap boxes;
 }
