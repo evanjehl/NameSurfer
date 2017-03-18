@@ -7,6 +7,7 @@ import acm.graphics.*;
 public class Boxes extends GraphicsProgram {
 	
 	public void init() {
+		boxes = new HashMap<String, GRect>();
 		nameField = new JTextField(MAX_FIELD_SIZE);
 		add(new JLabel("Name"), SOUTH);
 		add(nameField, SOUTH);
