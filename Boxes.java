@@ -15,12 +15,6 @@ public class Boxes extends GraphicsProgram {
 	}
 	
 	private JTextField nameField;
-	
-	private JButton addButton;
-	
-	private JButton removeButton;
-	
-	private JButton clearButton;
-	
+
 	private static final int MAX_FIELD_SIZE = 30;
 }
