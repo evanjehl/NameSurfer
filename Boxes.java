@@ -24,5 +24,5 @@ public class Boxes extends GraphicsProgram {
 	
 	private JButton clearButton;
 	
-	private static final int MAX_FIELD_SIZE = 50;
+	private static final int MAX_FIELD_SIZE = 30;
 }
