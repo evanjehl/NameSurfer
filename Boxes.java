@@ -9,8 +9,8 @@ public class Boxes extends GraphicsProgram {
 	public void init() {
 		boxes = new HashMap<String, GCompound>();
 		nameField = new JTextField(MAX_FIELD_SIZE);
-		initX = (getHeight() - BOX_HEIGHT) / 2;
-		initY = (getWidth() - BOX_WIDTH) / 2;
+		initX = (getWidth() - BOX_WIDTH) / 2;
+		initY = (getHeight() - BOX_HEIGHT) / 2;
 		add(new JLabel("Name"), SOUTH);
 		add(nameField, SOUTH);
 		add(new JButton("Add"), SOUTH);
