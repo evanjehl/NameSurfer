@@ -43,7 +43,9 @@ public class Boxes extends GraphicsProgram {
 		}
 	}
 	
-	
+	public void mouseDragged(MouseEvent e) {
+		if (e.getPoint())
+	}
 	
 	private JTextField nameField;
 
