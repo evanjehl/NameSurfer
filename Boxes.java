@@ -9,6 +9,8 @@ public class Boxes extends GraphicsProgram {
 	public void init() {
 		boxes = new HashMap<String, GCompound>();
 		nameField = new JTextField(MAX_FIELD_SIZE);
+		initX = (getWidth() - BOX_WIDTH) / 2;
+		initY = (getHeight() - BOX_HEIGHT) / 2;
 		add(new JLabel("Name"), SOUTH);
 		add(nameField, SOUTH);
 		add(new JButton("Add"), SOUTH);
@@ -21,10 +23,12 @@ public class Boxes extends GraphicsProgram {
 	
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Add")) {
-			GRect rectangle = new GRect((getWidth() - BOX_WIDTH) / 2, (getHeight() - BOX_HEIGHT) / 2, BOX_WIDTH, BOX_HEIGHT);
+			GRect rectangle = new GRect(initX, initY, BOX_WIDTH, BOX_HEIGHT);
 			
 		}
 	}
+	
+	
 	
 	private JTextField nameField;
 
@@ -33,6 +37,10 @@ public class Boxes extends GraphicsProgram {
 	private static final double BOX_WIDTH = 120;
 	
 	private static final double BOX_HEIGHT = 50;
+	
+	private double initX;
+	
+	private double initY;
 	
 	private HashMap boxes;
 }
