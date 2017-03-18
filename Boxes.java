@@ -43,8 +43,18 @@ public class Boxes extends GraphicsProgram {
 		}
 	}
 	
+	public void mousePressed(MouseEvent e) {
+		lastX = e.getX();
+		lastY = e.getY();
+		gobj = getElementAt(lastX, lastY);
+	}
+	
 	public void mouseDragged(MouseEvent e) {
-		if (e.getPoint())
+		if (gobj != null) {
+			gobj.move(e.getX() - lastX, e.getY() - lastY);
+			lastX = e.getX();
+			lastY = e.getY();
+		}
 	}
 	
 	private JTextField nameField;
@@ -55,5 +65,11 @@ public class Boxes extends GraphicsProgram {
 	
 	private static final double BOX_HEIGHT = 50;
 	
+	private GObject gobj;
+	
 	private HashMap<String, GCompound> boxes;
+	
+	private double lastX;
+	
+	private double lastY;
 }
