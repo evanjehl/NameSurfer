@@ -9,11 +9,11 @@ public class Boxes extends GraphicsProgram {
 		addButton = new JButton("Add");
 		removeButton = new JButton("Remove");
 		clearButton = new JButton("Clear");
-		add(new JLabel("Name"));
-		add(nameField);
-		add(addButton);
-		add(removeButton);
-		add(clearButton);
+		add(new JLabel("Name"), SOUTH);
+		add(nameField, SOUTH);
+		add(addButton, SOUTH);
+		add(removeButton, SOUTH);
+		add(clearButton, SOUTH);
 	}
 	
 	private JTextField nameField;
