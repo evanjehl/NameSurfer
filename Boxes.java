@@ -28,7 +28,6 @@ public class Boxes extends GraphicsProgram {
 			GLabel text = new GLabel(input);
 			text.setLocation((getWidth() - text.getWidth()) / 2, getHeight() / 2);
 			add(new GRect(initX, initY, BOX_WIDTH, BOX_HEIGHT));
-			add(text);
 			boxes.put(input, box);
 		}
 	}
