@@ -26,7 +26,7 @@ public class Boxes extends GraphicsProgram {
 			GCompound box = new GCompound();
 			String input = nameField.getText();
 			GLabel text = new GLabel(input);
-			text.setLocation((getHeight() + text.getAscent() + text.getDescent()) / 2, (getWidth() - text.getWidth()) / 2);
+			text.setLocation((getHeight() - text.getAscent() - text.getDescent()) / 2, (getWidth() - text.getWidth()) / 2);
 			add(new GRect(initX, initY, BOX_HEIGHT, BOX_WIDTH));
 			add(text);
 			boxes.put(input, box);
