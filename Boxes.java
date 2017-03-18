@@ -60,6 +60,12 @@ public class Boxes extends GraphicsProgram {
 		}
 	}
 	
+	public void mouseClikced(MouseEvent e) {
+		if (gobj != null) {
+			gobj.sendToFront();
+		}
+	}
+	
 	private JTextField nameField;
 
 	private static final int MAX_FIELD_SIZE = 30;
