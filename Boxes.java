@@ -12,6 +12,7 @@ public class Boxes extends GraphicsProgram {
 		add(new JButton("Remove"), SOUTH);
 		add(new JButton("Clear"), SOUTH);
 		nameField.addActionListener(this);
+		addMouseListeners();
 		addActionListeners();
 	}
 	
