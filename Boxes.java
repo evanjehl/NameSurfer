@@ -8,11 +8,14 @@ public class Boxes extends GraphicsProgram {
 		nameField = new JTextField(MAX_FIELD_SIZE);
 		add(new JLabel("Name"), SOUTH);
 		add(nameField, SOUTH);
-		nameField.addActionListener(this);
 		add(new JButton("Add"), SOUTH);
 		add(new JButton("Remove"), SOUTH);
 		add(new JButton("Clear"), SOUTH);
+		nameField.addActionListener(this);
+		addActionListeners();
 	}
+	
+	
 	
 	private JTextField nameField;
 
