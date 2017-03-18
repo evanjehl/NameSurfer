@@ -11,6 +11,7 @@ public class Boxes extends GraphicsProgram {
 		clearButton = new JButton("Clear");
 		add(new JLabel("Name"), SOUTH);
 		add(nameField, SOUTH);
+		nameField.addActionListener(this);
 		add(addButton, SOUTH);
 		add(removeButton, SOUTH);
 		add(clearButton, SOUTH);
