@@ -42,5 +42,5 @@ public class Boxes extends GraphicsProgram {
 	
 	private static final double BOX_HEIGHT = 50;
 	
-	private HashMap boxes;
+	private HashMap<String, GCompound> boxes;
 }
