@@ -30,6 +30,13 @@ public class Boxes extends GraphicsProgram {
 			add(box);
 			boxes.put(input, box);
 		}
+		if (e.getActionCommand().equals("Remove")) {
+			String input = nameField.getText();
+			if (boxes.containsKey(input)) {
+				remove(boxes.get(input));
+				boxes.remove(input);
+			}
+		}
 	}
 	
 	
