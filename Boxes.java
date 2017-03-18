@@ -27,6 +27,7 @@ public class Boxes extends GraphicsProgram {
 			text.setLocation((getWidth() - text.getWidth()) / 2, (getHeight() + text.getAscent() - text.getDescent()) / 2);
 			box.add(text);
 			box.add(new GRect((getWidth() - BOX_WIDTH) / 2, (getHeight() - BOX_HEIGHT) / 2, BOX_WIDTH, BOX_HEIGHT));
+			add(box);
 			boxes.put(input, box);
 		}
 	}
