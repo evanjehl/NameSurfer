@@ -7,7 +7,7 @@ import acm.graphics.*;
 public class Boxes extends GraphicsProgram {
 	
 	public void init() {
-		boxes = new HashMap<String, GRect>();
+		boxes = new HashMap<String, GCompound>();
 		nameField = new JTextField(MAX_FIELD_SIZE);
 		add(new JLabel("Name"), SOUTH);
 		add(nameField, SOUTH);
@@ -21,7 +21,7 @@ public class Boxes extends GraphicsProgram {
 	
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Add")) {
-			
+			GRect rectangle = new GRect()
 		}
 	}
 	
