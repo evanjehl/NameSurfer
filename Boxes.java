@@ -24,11 +24,13 @@ public class Boxes extends GraphicsProgram {
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Add")) {
 			GCompound box = new GCompound();
-			GLabel text = new GLabel(nameField.getText());
+			String input = nameField.getText();
+			GLabel text = new GLabel(input);
 			box.add(new GRect(initX, initY, BOX_WIDTH, BOX_HEIGHT));
 			box.add(text);
 			text.setLocation((box.getWidth() - text.getWidth()) / 2, (box.getHeight() - text.getAscent() - text.getDescent()) / 2);
 			add(box);
+			boxes.put(nameField.get)
 		}
 	}
 	
