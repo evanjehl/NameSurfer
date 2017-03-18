@@ -30,7 +30,7 @@ public class Boxes extends GraphicsProgram {
 			box.add(text);
 			text.setLocation((box.getWidth() - text.getWidth()) / 2, (box.getHeight() - text.getAscent() - text.getDescent()) / 2);
 			add(box);
-			boxes.put(nameField.get)
+			boxes.put(input, box);
 		}
 	}
 	
