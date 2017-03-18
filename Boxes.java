@@ -60,7 +60,7 @@ public class Boxes extends GraphicsProgram {
 		}
 	}
 	
-	public void mouseClikced(MouseEvent e) {
+	public void mouseClicked(MouseEvent e) {
 		if (gobj != null) {
 			gobj.sendToFront();
 		}
