@@ -37,6 +37,10 @@ public class Boxes extends GraphicsProgram {
 				boxes.remove(input);
 			}
 		}
+		if (e.getActionCommand().equals("Clear")) {
+			removeAll();
+			boxes.clear();
+		}
 	}
 	
 	
