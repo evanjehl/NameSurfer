@@ -21,7 +21,8 @@ public class Boxes extends GraphicsProgram {
 	
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Add")) {
-			GRect rectangle = new GRect()
+			GRect rectangle = new GRect((getWidth() - BOX_WIDTH) / 2, (getHeight() - BOX_HEIGHT) / 2, BOX_WIDTH, BOX_HEIGHT);
+			
 		}
 	}
 	
