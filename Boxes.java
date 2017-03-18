@@ -9,8 +9,6 @@ public class Boxes extends GraphicsProgram {
 	public void init() {
 		boxes = new HashMap<String, GCompound>();
 		nameField = new JTextField(MAX_FIELD_SIZE);
-		initX = (getWidth() - BOX_WIDTH) / 2;
-		initY = (getHeight() - BOX_HEIGHT) / 2;
 		add(new JLabel("Name"), SOUTH);
 		add(nameField, SOUTH);
 		add(new JButton("Add"), SOUTH);
@@ -19,6 +17,8 @@ public class Boxes extends GraphicsProgram {
 		nameField.addActionListener(this);
 		addMouseListeners();
 		addActionListeners();
+		initX = (getWidth() - BOX_WIDTH) / 2;
+		initY = (getHeight() - BOX_HEIGHT) / 2;
 	}
 	
 	public void actionPerformed(ActionEvent e) {
