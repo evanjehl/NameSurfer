@@ -18,7 +18,9 @@ public class Boxes extends GraphicsProgram {
 	}
 	
 	public void actionPerformed(ActionEvent e) {
-		
+		if (e.getActionCommand().equals("Add")) {
+			
+		}
 	}
 	
 	private JTextField nameField;
