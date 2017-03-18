@@ -1,4 +1,5 @@
 import acm.program.*;
+import java.awt.event.*;
 import javax.swing.*;
 import acm.graphics.*;
 
@@ -16,7 +17,9 @@ public class Boxes extends GraphicsProgram {
 		addActionListeners();
 	}
 	
-	
+	public void actionPerformed(ActionEvent e) {
+		
+	}
 	
 	private JTextField nameField;
 
