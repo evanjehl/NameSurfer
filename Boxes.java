@@ -17,8 +17,6 @@ public class Boxes extends GraphicsProgram {
 		nameField.addActionListener(this);
 		addMouseListeners();
 		addActionListeners();
-		initX = (getWidth() - BOX_WIDTH) / 2;
-		initY = (getHeight() - BOX_HEIGHT) / 2;
 	}
 	
 	public void actionPerformed(ActionEvent e) {
