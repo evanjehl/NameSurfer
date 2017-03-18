@@ -38,7 +38,10 @@ public class Boxes extends GraphicsProgram {
 			}
 		}
 		if (e.getActionCommand().equals("Clear")) {
-			removeAll();
+			Iterator<String> it = boxes.keySet().iterator();
+			while (it.hasNext()) {
+				remove(boxes.get(it.next()));
+			}
 			boxes.clear();
 		}
 	}
