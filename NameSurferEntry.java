@@ -19,14 +19,7 @@ public class NameSurferEntry implements NameSurferConstants {
  * decade.
  */
 	public NameSurferEntry(String line) {
-		scanner = new Scanner(line);
-		String name = scanner.next();
-		int[] values = new int[NDECADES];
-		for (int i = 0; i < NDECADES; i++) {
-			values[i] = Integer.parseInt(scanner.next());
-		}
-		entryDatabase.put(name, values);
-		scanner.close();
+		
 	}
 
 /* Method: getName() */
@@ -61,8 +54,5 @@ public class NameSurferEntry implements NameSurferConstants {
 		return "";
 	}
 	
-	private HashMap<String, int[]> entryDatabase;
-	
-	private Scanner scanner;
 }
 
