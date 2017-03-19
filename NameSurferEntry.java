@@ -26,6 +26,7 @@ public class NameSurferEntry implements NameSurferConstants {
 			values[i] = Integer.parseInt(scanner.next());
 		}
 		entryDatabase.put(name, values);
+		scanner.close();
 	}
 
 /* Method: getName() */
