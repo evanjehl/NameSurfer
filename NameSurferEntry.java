@@ -20,7 +20,7 @@ public class NameSurferEntry implements NameSurferConstants {
  */
 	public NameSurferEntry(String line) {
 		scanner = new Scanner(line);
-		String name = scanner.next();
+		getName(line);
 		int[] values = new int[NDECADES];
 		for (int i = 0; i < NDECADES; i++) {
 			values[i] = Integer.parseInt(scanner.next());
@@ -34,8 +34,8 @@ public class NameSurferEntry implements NameSurferConstants {
  * Returns the name associated with this entry.
  */
 	public String getName() {
-		// You need to turn this stub into a real implementation //
-		return null;
+		String name = scanner.next();
+		return name;
 	}
 
 /* Method: getRank(decade) */
