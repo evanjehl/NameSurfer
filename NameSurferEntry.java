@@ -59,7 +59,8 @@ public class NameSurferEntry implements NameSurferConstants {
 		int tokenEnd = line.indexOf(" ");
 		name = line.substring(0, tokenEnd);
 		for (int i = 0; i < NDECADES; i++) {
-			tokenEnd = 
+			tokenEnd = (line.indexOf(" ", tokenEnd));
+			
 		}
 	}
 	
