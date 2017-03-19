@@ -8,6 +8,7 @@
 import acm.program.*;
 import java.awt.event.*;
 import javax.swing.*;
+import java.io.*;
 
 public class NameSurfer extends Program implements NameSurferConstants {
 
@@ -25,6 +26,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	    add(nameField, SOUTH);
 	    add(graphButton, SOUTH);
 	    add(clearButton, SOUTH);
+	    
 	}
 
 /* Method: actionPerformed(e) */
@@ -40,4 +42,16 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	}
 	
 	private JTextField nameField;
+	
+	private BufferedReader openFileReader(String file) {
+		BufferedReader rd = null;
+		while (rd == null) {
+			try {
+				rd = new BufferedReader(new FileReader(file));
+			} catch (IOException ex) {
+				println("Can't open that file.");
+			}
+		}
+		return rd;
+	}
 }
