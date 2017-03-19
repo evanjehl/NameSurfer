@@ -47,7 +47,9 @@ public class NameSurfer extends Program implements NameSurferConstants {
  * button actions.
  */
 	public void actionPerformed(ActionEvent e) {
-		if (entryDatabase
+		if (e.getActionCommand().equals("Graph")) {
+			
+		}
 	}
 	
 	private JTextField nameField;
