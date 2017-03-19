@@ -23,8 +23,8 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	    JButton clearButton = new JButton("Clear");
 	    add(name, SOUTH);
 	    add(nameField, SOUTH);
-	    add(graph, SOUTH);
-	    add(clear, SOUTH);
+	    add(graphButton, SOUTH);
+	    add(clearButton, SOUTH);
 	}
 
 /* Method: actionPerformed(e) */
