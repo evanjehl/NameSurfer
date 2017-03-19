@@ -18,7 +18,7 @@ public class NameSurferEntry implements NameSurferConstants {
  * followed by integers giving the rank of that name for each
  * decade.
  */
-	public NameSurferEntry(String name) {
+	public NameSurferEntry(String line) {
 	
 	}
 
