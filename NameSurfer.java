@@ -26,7 +26,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	    add(nameField, SOUTH);
 	    add(graphButton, SOUTH);
 	    add(clearButton, SOUTH);
-	    BufferedReader rd = openFileReader("names-data.txt");
+	    rd = openFileReader("names-data.txt");
 	}
 
 /* Method: actionPerformed(e) */
@@ -54,4 +54,6 @@ public class NameSurfer extends Program implements NameSurferConstants {
 		}
 		return rd;
 	}
+	
+	private BufferedReader rd;
 }
