@@ -6,6 +6,8 @@
  */
 
 import acm.program.*;
+import acm.util.ErrorException;
+
 import java.awt.event.*;
 import javax.swing.*;
 import java.io.*;
@@ -27,6 +29,15 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	    add(graphButton, SOUTH);
 	    add(clearButton, SOUTH);
 	    rd = openFileReader("names-data.txt");
+	    while (true) {
+	    	try {
+	    		String line = rd.readLine();
+	    		if (line == null) break;
+	    		NameSurferEntry entry = new NameSurferEntry(line);
+	    	} catch (IOException ex) {
+	    		throw new ErrorException(ex);
+	    	}
+	    }
 	}
 
 /* Method: actionPerformed(e) */
