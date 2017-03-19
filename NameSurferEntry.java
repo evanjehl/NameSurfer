@@ -60,6 +60,6 @@ public class NameSurferEntry implements NameSurferConstants {
 		return "";
 	}
 	
-	public HashMap<String, int[]> entryDatabase;
+	private HashMap<String, int[]> entryDatabase;
 }
 
