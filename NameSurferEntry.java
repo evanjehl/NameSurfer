@@ -53,5 +53,7 @@ public class NameSurferEntry implements NameSurferConstants {
 		// You need to turn this stub into a real implementation //
 		return "";
 	}
+	
+	private HashMap<String, int[]> entryDatabase;
 }
 
