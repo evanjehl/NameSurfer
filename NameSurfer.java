@@ -19,8 +19,8 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	public void init() {
 	    JLabel name = new JLabel("Name");
 	    JTextField nameField = new JTextField(30);
-	    JButton graph = new JButton("Graph");
-	    JButton clear = new JButton("Clear");
+	    JButton graphButton = new JButton("Graph");
+	    JButton clearButton = new JButton("Clear");
 	    add(name, SOUTH);
 	    add(nameField, SOUTH);
 	    add(graph, SOUTH);
@@ -34,6 +34,8 @@ public class NameSurfer extends Program implements NameSurferConstants {
  * button actions.
  */
 	public void actionPerformed(ActionEvent e) {
-		// You fill this in //
+		if (e.getActionCommand().equals("Graph")) {
+			
+		}
 	}
 }
