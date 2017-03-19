@@ -58,9 +58,10 @@ public class NameSurferEntry implements NameSurferConstants {
 	private void parseLine(String line) {
 		int tokenEnd = line.indexOf(" ");
 		name = line.substring(0, tokenEnd);
+		rankings = new int[NDECADES];
 		for (int i = 0; i < NDECADES; i++) {
 			tokenEnd = (line.indexOf(" ", tokenEnd));
-			
+			int[]
 		}
 	}
 	
