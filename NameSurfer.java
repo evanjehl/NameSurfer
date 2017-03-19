@@ -11,6 +11,7 @@ import acm.util.ErrorException;
 import java.awt.event.*;
 import javax.swing.*;
 import java.io.*;
+import java.util.*;
 
 public class NameSurfer extends Program implements NameSurferConstants {
 
@@ -67,4 +68,6 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	}
 	
 	private BufferedReader rd;
+	
+	private HashMap<String, NameSurferEntry> nameDatabase;
 }
