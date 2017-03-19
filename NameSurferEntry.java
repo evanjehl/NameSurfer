@@ -20,7 +20,8 @@ public class NameSurferEntry implements NameSurferConstants {
  */
 	public NameSurferEntry(String line) {
 		parseLine(line);
-		
+		String entryName = name;
+		int[] entryRankings = 
 	}
 
 /* Method: getName() */
@@ -57,12 +58,12 @@ public class NameSurferEntry implements NameSurferConstants {
 	
 	private void parseLine(String line) {
 		int tokenEnd = line.indexOf(" ");
-		name = line.substring(0, tokenEnd);
-		rankings = new int[NDECADES];
+		entryName = line.substring(0, tokenEnd);
+		entryRankings = new int[NDECADES];
 		for (int i = 0; i < NDECADES; i++) {
 			int tokenStart = tokenEnd + 1;
 			tokenEnd = (line.indexOf(" ", tokenEnd));
-			rankings[i] = Integer.parseInt(line.substring(tokenStart, tokenEnd));
+			entryRankings[i] = Integer.parseInt(line.substring(tokenStart, tokenEnd));
 		}
 	}
 	
