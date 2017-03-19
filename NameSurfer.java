@@ -34,7 +34,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
  * button actions.
  */
 	public void actionPerformed(ActionEvent e) {
-		if (e.getActionCommand().equals("Graph") && nameField) {
+		if (e.getActionCommand().equals("Graph")) {
 			
 		}
 	}
