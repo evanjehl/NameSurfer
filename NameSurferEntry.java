@@ -55,7 +55,8 @@ public class NameSurferEntry implements NameSurferConstants {
  * NameSurferEntry.
  */
 	public String toString() {
-		// You need to turn this stub into a real implementation //
+		String nameSurferEntryString = name;
+		
 		return "";
 	}
 	
