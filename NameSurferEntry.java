@@ -46,8 +46,7 @@ public class NameSurferEntry implements NameSurferConstants {
  * not appear in a decade, the rank value is 0.
  */
 	public int getRank(int decade) {
-		// You need to turn this stub into a real implementation //
-		return 0;
+		return rankings[(decade % START_DECADE) / 10];
 	}
 
 /* Method: toString() */
