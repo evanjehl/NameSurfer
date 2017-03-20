@@ -59,6 +59,7 @@ public class NameSurferEntry implements NameSurferConstants {
 		for (int i = 1; i < rankings.length; i++) {
 			nameSurferEntryString += " " + rankings[i];
 		}
+		nameSurferEntryString += "]";
 		return "";
 	}
 	
