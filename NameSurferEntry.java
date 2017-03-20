@@ -60,7 +60,7 @@ public class NameSurferEntry implements NameSurferConstants {
 			nameSurferEntryString += " " + rankings[i];
 		}
 		nameSurferEntryString += "]";
-		return "";
+		return nameSurferEntryString;
 	}
 	
 	private String name;
