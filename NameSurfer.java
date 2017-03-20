@@ -45,7 +45,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	}
 	
 	private void loadDatabase() {
-	    rd = openFileReader("names-data.txt");
+	    rd = openFileReader(NAMES_DATA_FILE);
 	    while (true) {
 	    	try {
 	    		String line = rd.readLine();
