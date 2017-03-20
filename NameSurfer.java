@@ -51,7 +51,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	    		String line = rd.readLine();
 	    		if (line == null) break;
 	    		NameSurferEntry entry = new NameSurferEntry(line);
-	    		nameDatabase.put(key, entry);
+	    		nameDatabase.put(entry.getName(), entry);
 	    	} catch (IOException ex) {
 	    		throw new ErrorException(ex);
 	    	}
