@@ -58,7 +58,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	    			if (i < NDECADES - 1) {
 	    				tokenEnd = (line.indexOf(" ", tokenEnd));
 	    			} else {
-	    				tokenEnd = line.length() - 1;
+	    				tokenEnd = line.length();
 	    			}
 	    			rankings[i] = Integer.parseInt(line.substring(tokenStart, tokenEnd));
 	    		}
