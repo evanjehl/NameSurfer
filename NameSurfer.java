@@ -52,7 +52,18 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	    		if (line == null) break;
 	    		int tokenEnd = line.indexOf(" ");
 	    		String name = line.substring(0, tokenEnd);
-	    		println(name);
+	    		int [] rankings = new int[NDECADES];
+	    		for (int i = 0; i < NDECADES; i++) {
+	    			int tokenStart = tokenEnd + 1;
+	    			if (i < NDECADES - 1) {
+	    				tokenEnd = (line.indexOf(" ", tokenEnd));
+	    			} else {
+	    				tokenEnd = line.length();
+	    			}
+	    			rankings[i] = Integer.parseInt(line.substring(tokenStart, tokenEnd));
+	    		}
+	    		NameSurferEntry entry = new NameSurferEntry(name, rankings);
+	    		nameDatabase.put(entry.getName(), entry);
 	    	} catch (IOException ex) {
 	    		throw new ErrorException(ex);
 	    	}
