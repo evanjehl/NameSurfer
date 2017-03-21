@@ -46,14 +46,17 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	
 	private void loadDatabase() {
 	    BufferedReader rd = openFileReader(NAMES_DATA_FILE);
+	    while (true) {
 	    	try {
 	    		String line = rd.readLine();
+	    		if (line == null) break;
 	    		int tokenEnd = line.indexOf(" ");
 	    		String name = line.substring(0, tokenEnd);
 	    		println(name);
 	    	} catch (IOException ex) {
 	    		throw new ErrorException(ex);
 	    	}
+	    }
     }
 	
 	private BufferedReader openFileReader(String file) {
