@@ -68,6 +68,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	    		throw new ErrorException(ex);
 	    	}
 	    }
+	    rd.close();
 	}
 	
 	private BufferedReader openFileReader(String file) {
