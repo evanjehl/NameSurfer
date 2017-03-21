@@ -57,6 +57,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	    			int tokenStart = tokenEnd + 1;
 	    			tokenEnd = (line.indexOf(" ", tokenEnd));
 	    			rankings[i] = Integer.parseInt(line.substring(tokenStart, tokenEnd));
+	    		}
 	    		NameSurferEntry entry = new NameSurferEntry(name, rankings);
 	    		nameDatabase.put(entry.getName(), entry);
 	    	} catch (IOException ex) {
