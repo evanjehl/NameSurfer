@@ -19,7 +19,8 @@ public class NameSurferEntry implements NameSurferConstants {
  * decade.
  */
 	public NameSurferEntry(String entryName, int[] entryRankings) {
-
+			name = entryName;
+			rankings = entryRankings;
 		}
 	}
 
