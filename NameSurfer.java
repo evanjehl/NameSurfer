@@ -56,7 +56,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	    		for (int i = 0; i < NDECADES; i++) {
 	    			int tokenStart = tokenEnd + 1;
 	    			if (i < NDECADES - 1) {
-	    				tokenEnd = (line.indexOf(" ", tokenEnd));
+	    				tokenEnd = (line.indexOf(" ", tokenStart));
 	    			} else {
 	    				tokenEnd = line.length();
 	    			}
