@@ -84,7 +84,5 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	
 	private JTextField nameField;
 	
-	private BufferedReader rd;
-	
 	private HashMap<String, NameSurferEntry> nameDatabase;
 }
