@@ -40,7 +40,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
  */
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Graph")) {
-			
+			println(nameDatabase.get(nameField.getText()).toString());
 		}
 	}
 	
