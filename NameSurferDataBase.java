@@ -33,7 +33,7 @@ public class NameSurferDataBase implements NameSurferConstants {
 	    		String line = rd.readLine();
 	    		if (line == null) break;
 	    		NameSurferEntry entry = new NameSurferEntry(line);
-	    		database.put(name, entry);
+	    		database.put(entry.getName(), entry);
 	    	} catch (IOException ex) {
 	    		throw new ErrorException(ex);
 	    	}
