@@ -13,7 +13,7 @@ import javax.swing.*;
 import java.io.*;
 import java.util.*;
 
-public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
+public class NameSurfer extends Program implements NameSurferConstants {
 
 /* Method: init() */
 /**
