@@ -63,7 +63,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	    			rankings[i] = Integer.parseInt(line.substring(tokenStart, tokenEnd));
 	    		}
 	    		NameSurferEntry entry = new NameSurferEntry(name, rankings);
-	    		println(entry.getName());
+	    		nameDatabase.put(name, entry);
 	    	} catch (IOException ex) {
 	    		throw new ErrorException(ex);
 	    	}
