@@ -29,6 +29,8 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	    add(nameField, SOUTH);
 	    add(graphButton, SOUTH);
 	    add(clearButton, SOUTH);
+	    graph = new NameSurferGraph;
+	    add(graph);
 	    loadDatabase();
 	}
 
@@ -85,4 +87,6 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	private JTextField nameField;
 	
 	private HashMap<String, NameSurferEntry> nameDatabase;
+	
+	private NameSurferGraph graph;
 }
