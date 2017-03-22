@@ -48,7 +48,7 @@ public class NameSurferDataBase implements NameSurferConstants {
  */
 	public NameSurferEntry findEntry(String name) {
 		if (database.containsKey(name)) {
-			
+			return database.get(name);
 		}
 		return null;
 	}
