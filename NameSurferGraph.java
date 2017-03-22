@@ -68,7 +68,7 @@ public class NameSurferGraph extends GCanvas
 	
 	private void drawLines() {
 		for (int i = 0; i < graphEntries.size(); i++) {
-			for (int j = 0; j < NDECADES - 3; j++) {
+			for (int j = 0; j < NDECADES - 1; j++) {
 				GPoint p1;
 				GPoint p2;
 				GLabel l1;
