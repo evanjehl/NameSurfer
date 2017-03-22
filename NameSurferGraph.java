@@ -19,7 +19,9 @@ public class NameSurferGraph extends GCanvas
 	*/
 	public NameSurferGraph() {
 		addComponentListener(this);
-		//	 You fill in the rest //
+		for (int i = 1; i < NDECADES; i++) {
+			
+		}
 	}
 	
 	/**
