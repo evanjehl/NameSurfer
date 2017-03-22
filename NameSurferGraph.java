@@ -55,6 +55,8 @@ public class NameSurferGraph extends GCanvas
 		}
 		GLine upperMargin = new GLine(0, GRAPH_MARGIN_SIZE, getWidth(), GRAPH_MARGIN_SIZE);
 		GLine lowerMargin = new GLine(0, getHeight() - GRAPH_MARGIN_SIZE, getWidth(), getHeight() - GRAPH_MARGIN_SIZE);
+		add(upperMargin);
+		add(lowerMargin);
 	}
 	
 	
