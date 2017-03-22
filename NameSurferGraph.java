@@ -110,6 +110,9 @@ public class NameSurferGraph extends GCanvas
 						l2.setColor(Color.MAGENTA);
 						break;
 				}
+				add(line);
+				add(l1);
+				add(l2);
 			}
 		}
 	}
