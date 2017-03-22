@@ -49,7 +49,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	
 	private void loadDatabase() {
 	    BufferedReader rd = openFileReader(NAMES_DATA_FILE);
-	    for (int j = 0; j < 4; j++) {
+	    while (true) {
 	    	try {
 	    		String line = rd.readLine();
 	    		if (line == null) break;
