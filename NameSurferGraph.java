@@ -88,19 +88,26 @@ public class NameSurferGraph extends GCanvas
 					l2 = new GLabel(graphEntries.get(i).getName() + + graphEntries.get(i).getRank(j + 1), p2.getX() + 2, p2.getY() + 2);
 				}
 				GLine line = new GLine(p1.getX(), p1.getY(), p2.getX(), p2.getY());
-				add(line);
 				switch(i % 4) {
 					case 0:
 						line.setColor(Color.BLACK);
+						l1.setColor(Color.BLACK);
+						l2.setColor(Color.BLACK);
 						break;
 					case 1:
 						line.setColor(Color.RED);
+						l1.setColor(Color.RED);
+						l2.setColor(Color.RED);
 						break;
 					case 2:
 						line.setColor(Color.BLUE);
+						l1.setColor(Color.BLUE);
+						l2.setColor(Color.BLUE);
 						break;
 					case 3:
 						line.setColor(Color.MAGENTA);
+						l1.setColor(Color.MAGENTA);
+						l2.setColor(Color.MAGENTA);
 						break;
 				}
 			}
