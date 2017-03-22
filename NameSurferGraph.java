@@ -81,6 +81,10 @@ public class NameSurferGraph extends GCanvas
 					p2 = new GPoint(getWidth() * (j + 1) / 11, ((getHeight() - GRAPH_MARGIN_SIZE) * graphEntries.get(i).getRank(j + 1) / MAX_RANK) + GRAPH_MARGIN_SIZE); 
 				}
 				GLine line = new GLine(p1.getX(), p1.getY(), p2.getX(), p2.getY());
+				add(line);
+				switch(i % 4) {
+					
+				}
 			}
 		}
 	}
