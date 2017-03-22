@@ -77,21 +77,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	    }
     }
 	
-	private BufferedReader openFileReader(String file) {
-		BufferedReader rd = null;
-		while (rd == null) {
-			try {
-				rd = new BufferedReader(new FileReader(file));
-			} catch (IOException ex) {
-				println("Can't open that file.");
-			}
-		}
-		return rd;
-	}
-	
 	private JTextField nameField;
-	
-	private HashMap<String, NameSurferEntry> nameDatabase;
 	
 	private NameSurferGraph graph;
 }
