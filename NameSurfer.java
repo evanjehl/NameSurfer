@@ -24,12 +24,10 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 		nameDatabase = new HashMap<String, NameSurferEntry>();
 		JLabel name = new JLabel("Name");
 	    nameField = new JTextField(30);
-	    graphButton = new JButton("Graph");
-	    clearButton = new JButton("Clear");
 	    add(name, SOUTH);
 	    add(nameField, SOUTH);
-	    add(graphButton, SOUTH);
-	    add(clearButton, SOUTH);
+	    add(new JButton("Graph"), SOUTH);
+	    add(new JButton("Clear"), SOUTH);
 	    graph = new NameSurferGraph();
 	    add(graph);
 	    loadDatabase();
