@@ -76,6 +76,7 @@ public class NameSurferGraph extends GCanvas
 		GLine lowerMargin = new GLine(0, getHeight() - GRAPH_MARGIN_SIZE, getWidth(), getHeight() - GRAPH_MARGIN_SIZE);
 		add(upperMargin);
 		add(lowerMargin);
+		
 	}
 	
 	private HashMap<Color, NameSurferEntry> graphEntries;
