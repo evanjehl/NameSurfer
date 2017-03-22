@@ -78,12 +78,14 @@ public class NameSurferGraph extends GCanvas
 					l1 = new GLabel(graphEntries.get(i).getName() + " *", p1.getX() + 2, p1.getY() + 2);
 				} else {
 					p1 = new GPoint(getWidth() * j / 11, ((getHeight() - GRAPH_MARGIN_SIZE) * graphEntries.get(i).getRank(j + 1) / MAX_RANK) + GRAPH_MARGIN_SIZE);
-					l1 = new GLabel(graphEntries.get(i).getName() + " *", p1.getX() + 2, p1.getY() + 2);
+					l1 = new GLabel(graphEntries.get(i).getName() + graphEntries.get(i).getRank(j), p1.getX() + 2, p1.getY() + 2);
 				}
 				if (graphEntries.get(i).getRank(j + 1) == 0) {
 					p2 = new GPoint(getWidth() * (j + 1) / 11, getHeight() - GRAPH_MARGIN_SIZE);
+					l2 = new GLabel(graphEntries.get(i).getName() + " *", p2.getX() + 2, p2.getY() + 2);
 				} else {
-					p2 = new GPoint(getWidth() * (j + 1) / 11, ((getHeight() - GRAPH_MARGIN_SIZE) * graphEntries.get(i).getRank(j + 1) / MAX_RANK) + GRAPH_MARGIN_SIZE); 
+					p2 = new GPoint(getWidth() * (j + 1) / 11, ((getHeight() - GRAPH_MARGIN_SIZE) * graphEntries.get(i).getRank(j + 1) / MAX_RANK) + GRAPH_MARGIN_SIZE);
+					l2 = new GLabel(graphEntries.get(i).getName() + + graphEntries.get(i).getRank(j + 1), p2.getX() + 2, p2.getY() + 2);
 				}
 				GLine line = new GLine(p1.getX(), p1.getY(), p2.getX(), p2.getY());
 				add(line);
