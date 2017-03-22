@@ -76,10 +76,16 @@ public class NameSurferGraph extends GCanvas
 		GLine lowerMargin = new GLine(0, getHeight() - GRAPH_MARGIN_SIZE, getWidth(), getHeight() - GRAPH_MARGIN_SIZE);
 		add(upperMargin);
 		add(lowerMargin);
-		
+		drawLine();
 	}
 	
-	private HashMap<Color, NameSurferEntry> graphEntries;
+	private void drawLine() {
+		for (int i = 0; i < NDECADES - 1; i++) {
+			if ()
+		}
+	}
+	
+	private HashMap<Integer, NameSurferEntry> graphEntries;
 	
 	private int colorRotation;
 	
