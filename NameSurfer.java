@@ -34,8 +34,8 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	    add(graph);
 	    loadDatabase();
 	    Iterator<String> it = nameDatabase.keySet().iterator();
-	    for (int i = 0; i < 4; i++) {
-	    	
+	    while (it.hasNext()) {
+	    	println(it.next().toString());
 	    }
 	}
 
