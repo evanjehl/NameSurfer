@@ -42,6 +42,11 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
  * button actions.
  */
 	public void actionPerformed(ActionEvent e) {
+		if (e.getActionCommand().equals("Add")) {
+			if (nameDatabase.containsKey(nameField.getText())) {
+				
+			}
+		}
 		if (e.getActionCommand().equals("Clear")) {
 			graph.clear();
 		}
