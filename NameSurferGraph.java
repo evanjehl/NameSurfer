@@ -37,20 +37,7 @@ public class NameSurferGraph extends GCanvas
 	* simply stores the entry; the graph is drawn by calling update.
 	*/
 	public void addEntry(NameSurferEntry entry) {
-		switch(colorRotation % 4) {
-			case 0:
-				graphEntries.put(0, entry);
-				break;
-			case 1:
-				graphEntries.put(1, entry);
-				break;
-			case 2:
-				graphEntries.put(2, entry);
-				break;
-			case 3:
-				graphEntries.put(3, entry);
-				break;
-		}
+		graphEntries.add(entry);
 		update();
 	}
 	
