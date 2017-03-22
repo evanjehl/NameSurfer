@@ -19,6 +19,7 @@ public class NameSurferGraph extends GCanvas
 	*/
 	public NameSurferGraph() {
 		addComponentListener(this);
+		colorRotation = 0;
 		update();
 	}
 	
@@ -36,7 +37,22 @@ public class NameSurferGraph extends GCanvas
 	* simply stores the entry; the graph is drawn by calling update.
 	*/
 	public void addEntry(NameSurferEntry entry) {
-		// You fill this in //
+		switch(colorRotation % 4) {
+			case 0:
+				graphEntries.put(Color.BLACK, entry);
+				break;
+			case 1:
+				graphEntries.put(Color.RED, entry);
+				break;
+			case 2:
+				graphEntries.put(Color.BLUE, entry);
+				break;
+			case 3:
+				graphEntries.put(Color.MAGENTA, entry);
+				break;
+		}
+		colorRotation++;
+		update();
 	}
 	
 	
@@ -62,7 +78,9 @@ public class NameSurferGraph extends GCanvas
 		add(lowerMargin);
 	}
 	
+	private HashMap<Color, NameSurferEntry> graphEntries;
 	
+	private int colorRotation;
 	
 	
 	/* Implementation of the ComponentListener interface */
