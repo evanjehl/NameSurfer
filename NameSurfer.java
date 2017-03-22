@@ -49,6 +49,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 			}
 		}
 		if (e.getActionCommand().equals("Clear")) {
+			println("This button works");
 			graph.clear();
 		}
 	}
