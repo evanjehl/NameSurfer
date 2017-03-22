@@ -49,7 +49,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	    	try {
 	    		String line = rd.readLine();
 	    		int tokenEnd = line.indexOf(" ");
-	    		String name = line.substring(0, tokenEnd);
+	    		String name = "b";
 	    		int [] rankings = new int[NDECADES];
 	    		for (int i = 0; i < NDECADES; i++) {
 	    			int tokenStart = tokenEnd + 1;
