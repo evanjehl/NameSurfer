@@ -40,7 +40,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
  * button actions.
  */
 	public void actionPerformed(ActionEvent e) {
-		if (e.getSource() == graphButton) {
+		if (e.getActionCommand().equals("Graph")) {
 			println("This button works.");
 			if (nameDatabase.containsKey(nameField.getText())) {
 				graph.addEntry(nameDatabase.get(nameField.getText()));
