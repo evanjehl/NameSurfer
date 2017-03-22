@@ -68,7 +68,9 @@ public class NameSurferGraph extends GCanvas
 	private void drawLines() {
 		for (int i = 0; i < graphEntries.size(); i++) {
 			for (int j = 0; j < NDECADES - 1; j ++) {
-				if (graphEntries.get(i)
+				if (graphEntries.get(i).getRank(j) == 0 || graphEntries.get(i).getRank(j + 1) == 0) {
+					
+				}
 			}
 		}
 	}
