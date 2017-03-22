@@ -19,10 +19,7 @@ public class NameSurferGraph extends GCanvas
 	*/
 	public NameSurferGraph() {
 		addComponentListener(this);
-		for (int i = 1; i < NDECADES; i++) {
-			GLine line = new GLine((getWidth() * i) / 10, 0, (getWidth() * i) / 10, getHeight());
-			add(line);
-		}
+		update();
 	}
 	
 	/**
@@ -52,7 +49,10 @@ public class NameSurferGraph extends GCanvas
 	* the size of the canvas changes.
 	*/
 	public void update() {
-		//	 You fill this in //
+		for (int i = 1; i < NDECADES; i++) {
+			GLine line = new GLine((getWidth() * i) / 10, 0, (getWidth() * i) / 10, getHeight());
+			add(line);
+		}
 	}
 	
 	
