@@ -1,3 +1,9 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+import acm.util.ErrorException;
+
 /*
  * File: NameSurferDataBase.java
  * -----------------------------
@@ -19,7 +25,29 @@ public class NameSurferDataBase implements NameSurferConstants {
  * occurs as the file is being read.
  */
 	public NameSurferDataBase(String filename) {
-		// You fill this in //
+	    BufferedReader rd = openFileReader(NAMES_DATA_FILE);
+	    while (true) {
+	    	try {
+	    		String line = rd.readLine();
+	    		if (line == null) break;
+	    		int tokenEnd = line.indexOf(" ");
+	    		String name = line.substring(0, tokenEnd);
+	    		int [] rankings = new int[NDECADES];
+	    		for (int i = 0; i < NDECADES; i++) {
+	    			int tokenStart = tokenEnd + 1;
+	    			if (i < NDECADES - 1) {
+	    				tokenEnd = (line.indexOf(" ", tokenStart));
+	    			} else {
+	    				tokenEnd = line.length();
+	    			}
+	    			rankings[i] = Integer.parseInt(line.substring(tokenStart, tokenEnd));
+	    		}
+	    		NameSurferEntry entry = new NameSurferEntry(name, rankings);
+	    		nameDatabase.put(name, entry);
+	    	} catch (IOException ex) {
+	    		throw new ErrorException(ex);
+	    	}
+	    }
 	}
 	
 /* Method: findEntry(name) */
@@ -31,6 +59,18 @@ public class NameSurferDataBase implements NameSurferConstants {
 	public NameSurferEntry findEntry(String name) {
 		// You need to turn this stub into a real implementation //
 		return null;
+	}
+	
+	private BufferedReader openFileReader(String file) {
+		BufferedReader rd = null;
+		while (rd == null) {
+			try {
+				rd = new BufferedReader(new FileReader(file));
+			} catch (IOException ex) {
+				System.out.println("Can't open that file.");
+			}
+		}
+		return rd;
 	}
 }
 
