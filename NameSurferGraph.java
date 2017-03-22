@@ -51,7 +51,7 @@ public class NameSurferGraph extends GCanvas
 	public void update() {
 		for (int i = 0; i < NDECADES; i++) {
 			GLine line = new GLine((getWidth() * i) / 10, 0, (getWidth() * i) / 10, getHeight());
-			GLabel decade = new GLabel("" + )
+			GLabel decade = new GLabel("19" + 10 * i, (getWidth() * i) / 10 + 2, getHeight() + 2);
 			add(line);
 		}
 		GLine upperMargin = new GLine(0, GRAPH_MARGIN_SIZE, getWidth(), GRAPH_MARGIN_SIZE);
