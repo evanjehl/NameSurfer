@@ -21,6 +21,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
  * and initializing the interactors at the bottom of the window.
  */
 	public void init() {
+		database = new NameSurferDataBase("names-data.txt");
 		JLabel name = new JLabel("Name");
 	    nameField = new JTextField(30);
 	    add(name, SOUTH);
