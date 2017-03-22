@@ -94,8 +94,4 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	private HashMap<String, NameSurferEntry> nameDatabase;
 	
 	private NameSurferGraph graph;
-	
-	private JButton graphButton;
-	
-	private JButton clearButton;
 }
