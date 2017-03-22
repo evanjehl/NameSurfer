@@ -49,8 +49,9 @@ public class NameSurferDataBase implements NameSurferConstants {
 	public NameSurferEntry findEntry(String name) {
 		if (database.containsKey(name)) {
 			return database.get(name);
+		} else {
+			return null;
 		}
-		return null;
 	}
 	
 	private BufferedReader openFileReader(String file) {
