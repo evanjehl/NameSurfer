@@ -29,7 +29,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	    add(nameField, SOUTH);
 	    add(graphButton, SOUTH);
 	    add(clearButton, SOUTH);
-	    graph = new NameSurferGraph;
+	    graph = new NameSurferGraph();
 	    add(graph);
 	    loadDatabase();
 	}
