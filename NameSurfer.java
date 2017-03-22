@@ -13,7 +13,7 @@ import javax.swing.*;
 import java.io.*;
 import java.util.*;
 
-public class NameSurfer extends Program implements NameSurferConstants {
+public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 
 /* Method: init() */
 /**
@@ -43,6 +43,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
  */
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Graph")) {
+			
 			if (nameDatabase.containsKey(nameField.getText())) {
 				graph.addEntry(nameDatabase.get(nameField.getText()));
 			}
