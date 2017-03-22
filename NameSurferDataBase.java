@@ -47,7 +47,9 @@ public class NameSurferDataBase implements NameSurferConstants {
  * method returns null.
  */
 	public NameSurferEntry findEntry(String name) {
-		// You need to turn this stub into a real implementation //
+		if (database.containsKey(name)) {
+			
+		}
 		return null;
 	}
 	
