@@ -83,7 +83,18 @@ public class NameSurferGraph extends GCanvas
 				GLine line = new GLine(p1.getX(), p1.getY(), p2.getX(), p2.getY());
 				add(line);
 				switch(i % 4) {
-					
+					case 0:
+						line.setColor(Color.BLACK);
+						break;
+					case 1:
+						line.setColor(Color.RED);
+						break;
+					case 2:
+						line.setColor(Color.BLUE);
+						break;
+					case 3:
+						line.setColor(Color.MAGENTA);
+						break;
 				}
 			}
 		}
