@@ -25,7 +25,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 		JLabel name = new JLabel("Name");
 	    nameField = new JTextField(30);
 	    graphButton = new JButton("Graph");
-	    JButton clearButton = new JButton("Clear");
+	    clearButton = new JButton("Clear");
 	    add(name, SOUTH);
 	    add(nameField, SOUTH);
 	    add(graphButton, SOUTH);
@@ -97,4 +97,6 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	private NameSurferGraph graph;
 	
 	private JButton graphButton;
+	
+	private JButton clearButton;
 }
