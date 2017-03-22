@@ -32,19 +32,7 @@ public class NameSurferDataBase implements NameSurferConstants {
 	    	try {
 	    		String line = rd.readLine();
 	    		if (line == null) break;
-	    		int tokenEnd = line.indexOf(" ");
-	    		String name = line.substring(0, tokenEnd);
-	    		int [] rankings = new int[NDECADES];
-	    		for (int i = 0; i < NDECADES; i++) {
-	    			int tokenStart = tokenEnd + 1;
-	    			if (i < NDECADES - 1) {
-	    				tokenEnd = (line.indexOf(" ", tokenStart));
-	    			} else {
-	    				tokenEnd = line.length();
-	    			}
-	    			rankings[i] = Integer.parseInt(line.substring(tokenStart, tokenEnd));
-	    		}
-	    		NameSurferEntry entry = new NameSurferEntry(name, rankings);
+	    		NameSurferEntry entry = new NameSurferEntry(line);
 	    		database.put(name, entry);
 	    	} catch (IOException ex) {
 	    		throw new ErrorException(ex);
