@@ -53,5 +53,5 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	
 	private NameSurferGraph graph;
 	
-	private NameSurferDatabase database;
+	private NameSurferDataBase database;
 }
