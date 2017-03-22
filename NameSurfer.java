@@ -43,6 +43,9 @@ public class NameSurfer extends Program implements NameSurferConstants {
 		if (e.getActionCommand().equals("Graph")) {
 			println(nameDatabase.get(nameField.getText()).toString());
 		}
+		if (e.getActionCommand().equals("Clear")) {
+			graph.clear();
+		}
 	}
 	
 	private void loadDatabase() {
