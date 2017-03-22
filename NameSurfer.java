@@ -42,7 +42,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
  * button actions.
  */
 	public void actionPerformed(ActionEvent e) {
-		if (e.getActionCommand().equals("Add")) {
+		if (e.getActionCommand().equals("Graph")) {
 			if (nameDatabase.containsKey(nameField.getText())) {
 				graph.addEntry(nameDatabase.get(nameField.getText()));
 			}
