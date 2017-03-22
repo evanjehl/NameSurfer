@@ -53,6 +53,8 @@ public class NameSurferGraph extends GCanvas
 			GLine line = new GLine((getWidth() * i) / 10, 0, (getWidth() * i) / 10, getHeight());
 			add(line);
 		}
+		GLine upperMargin = new GLine(0, GRAPH_MARGIN_SIZE, getWidth(), GRAPH_MARGIN_SIZE);
+		GLine lowerMargin = new GLine(0, getHeight() - GRAPH_MARGIN_SIZE, getWidth(), getHeight() - GRAPH_MARGIN_SIZE);
 	}
 	
 	
