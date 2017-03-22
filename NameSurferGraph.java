@@ -52,7 +52,7 @@ public class NameSurferGraph extends GCanvas
 		removeAll();
 		for (int i = 0; i < NDECADES; i++) {
 			GLine line = new GLine((getWidth() * i) / 11, 0, (getWidth() * i) / 11, getHeight());
-			GLabel decade = new GLabel("" + (1900 + 10 * i), (getWidth() * i) / 11 + 2, getHeight() + 2);
+			GLabel decade = new GLabel("" + (1900 + 10 * i), (getWidth() * i) / 11 + 2, getHeight() - 2);
 			add(line);
 			add(decade);
 		}
