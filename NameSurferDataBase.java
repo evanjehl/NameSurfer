@@ -26,7 +26,7 @@ public class NameSurferDataBase implements NameSurferConstants {
  * occurs as the file is being read.
  */
 	public NameSurferDataBase(String filename) {
-		nameDatabase = new HashMap<String, NameSurferEntry>();
+		database = new HashMap<String, NameSurferEntry>();
 		BufferedReader rd = openFileReader(NAMES_DATA_FILE);
 	    while (true) {
 	    	try {
@@ -45,7 +45,7 @@ public class NameSurferDataBase implements NameSurferConstants {
 	    			rankings[i] = Integer.parseInt(line.substring(tokenStart, tokenEnd));
 	    		}
 	    		NameSurferEntry entry = new NameSurferEntry(name, rankings);
-	    		nameDatabase.put(name, entry);
+	    		database.put(name, entry);
 	    	} catch (IOException ex) {
 	    		throw new ErrorException(ex);
 	    	}
@@ -75,6 +75,6 @@ public class NameSurferDataBase implements NameSurferConstants {
 		return rd;
 	}
 	
-	private HashMap<String, NameSurferEntry> nameDatabase;
+	private HashMap<String, NameSurferEntry> database;
 }
 
