@@ -30,6 +30,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	    add(new JButton("Clear"), SOUTH);
 	    graph = new NameSurferGraph();
 	    add(graph);
+	    addActionListeners();
 	    loadDatabase();
 	}
 
