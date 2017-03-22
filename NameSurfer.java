@@ -24,7 +24,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 		nameDatabase = new HashMap<String, NameSurferEntry>();
 		JLabel name = new JLabel("Name");
 	    nameField = new JTextField(30);
-	    JButton graphButton = new JButton("Graph");
+	    graphButton = new JButton("Graph");
 	    JButton clearButton = new JButton("Clear");
 	    add(name, SOUTH);
 	    add(nameField, SOUTH);
@@ -42,14 +42,12 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
  * button actions.
  */
 	public void actionPerformed(ActionEvent e) {
-		if (e.getActionCommand().equals("Graph")) {
-			println("That button works");
+		if (e.getSource() == graphButton) {
 			if (nameDatabase.containsKey(nameField.getText())) {
 				graph.addEntry(nameDatabase.get(nameField.getText()));
 			}
 		}
 		if (e.getActionCommand().equals("Clear")) {
-			println("This button works");
 			graph.clear();
 		}
 	}
@@ -97,4 +95,6 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	private HashMap<String, NameSurferEntry> nameDatabase;
 	
 	private NameSurferGraph graph;
+	
+	private JButton graphButton;
 }
