@@ -52,4 +52,6 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	private JTextField nameField;
 	
 	private NameSurferGraph graph;
+	
+	private NameSurferDatabase database;
 }
