@@ -21,7 +21,6 @@ public class NameSurfer extends Program implements NameSurferConstants {
  * and initializing the interactors at the bottom of the window.
  */
 	public void init() {
-		nameDatabase = new HashMap<String, NameSurferEntry>();
 		JLabel name = new JLabel("Name");
 	    nameField = new JTextField(30);
 	    add(name, SOUTH);
@@ -50,32 +49,6 @@ public class NameSurfer extends Program implements NameSurferConstants {
 			graph.clear();
 		}
 	}
-	
-	private void loadDatabase() {
-	    BufferedReader rd = openFileReader(NAMES_DATA_FILE);
-	    while (true) {
-	    	try {
-	    		String line = rd.readLine();
-	    		if (line == null) break;
-	    		int tokenEnd = line.indexOf(" ");
-	    		String name = line.substring(0, tokenEnd);
-	    		int [] rankings = new int[NDECADES];
-	    		for (int i = 0; i < NDECADES; i++) {
-	    			int tokenStart = tokenEnd + 1;
-	    			if (i < NDECADES - 1) {
-	    				tokenEnd = (line.indexOf(" ", tokenStart));
-	    			} else {
-	    				tokenEnd = line.length();
-	    			}
-	    			rankings[i] = Integer.parseInt(line.substring(tokenStart, tokenEnd));
-	    		}
-	    		NameSurferEntry entry = new NameSurferEntry(name, rankings);
-	    		nameDatabase.put(name, entry);
-	    	} catch (IOException ex) {
-	    		throw new ErrorException(ex);
-	    	}
-	    }
-    }
 	
 	private JTextField nameField;
 	
