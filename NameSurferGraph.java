@@ -39,16 +39,16 @@ public class NameSurferGraph extends GCanvas
 	public void addEntry(NameSurferEntry entry) {
 		switch(colorRotation % 4) {
 			case 0:
-				graphEntries.put(Color.BLACK, entry);
+				graphEntries.put(0, entry);
 				break;
 			case 1:
-				graphEntries.put(Color.RED, entry);
+				graphEntries.put(1, entry);
 				break;
 			case 2:
-				graphEntries.put(Color.BLUE, entry);
+				graphEntries.put(2, entry);
 				break;
 			case 3:
-				graphEntries.put(Color.MAGENTA, entry);
+				graphEntries.put(3, entry);
 				break;
 		}
 		colorRotation++;
