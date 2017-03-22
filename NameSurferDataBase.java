@@ -65,4 +65,3 @@ public class NameSurferDataBase implements NameSurferConstants {
 	
 	private HashMap<String, NameSurferEntry> database;
 }
-
