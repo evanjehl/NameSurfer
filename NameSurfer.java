@@ -31,6 +31,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	    add(clearButton, SOUTH);
 	    graph = new NameSurferGraph();
 	    add(graph);
+	    loadDatabase();
 	}
 
 /* Method: actionPerformed(e) */
