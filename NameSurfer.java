@@ -33,6 +33,10 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	    graph = new NameSurferGraph();
 	    add(graph);
 	    loadDatabase();
+	    Iterator<String> it = nameDatabase.keySet().iterator();
+	    for (int i = 0; i < 4; i++) {
+	    	
+	    }
 	}
 
 /* Method: actionPerformed(e) */
