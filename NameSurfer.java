@@ -33,7 +33,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 	    graph = new NameSurferGraph();
 	    add(graph);
 	    loadDatabase();
-	    Iterator<String> it = nameDatabase.keySet().iterator();
+	    Iterator<NameSurferEntry> it = nameDatabase.values().iterator();
 	    while (it.hasNext()) {
 	    	println(it.next().toString());
 	    }
