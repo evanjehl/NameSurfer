@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
 
 import acm.util.ErrorException;
 
@@ -25,7 +26,8 @@ public class NameSurferDataBase implements NameSurferConstants {
  * occurs as the file is being read.
  */
 	public NameSurferDataBase(String filename) {
-	    BufferedReader rd = openFileReader(NAMES_DATA_FILE);
+		nameDatabase = new HashMap<String, NameSurferEntry>();
+		BufferedReader rd = openFileReader(NAMES_DATA_FILE);
 	    while (true) {
 	    	try {
 	    		String line = rd.readLine();
@@ -72,5 +74,7 @@ public class NameSurferDataBase implements NameSurferConstants {
 		}
 		return rd;
 	}
+	
+	private HashMap<String, NameSurferEntry> nameDatabase;
 }
 
