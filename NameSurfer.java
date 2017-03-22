@@ -47,7 +47,7 @@ public class NameSurfer extends ConsoleProgram implements NameSurferConstants {
 				graph.addEntry(nameDatabase.get(nameField.getText()));
 			}
 		}
-		if (e.getActionCommand().equals("Clear")) {
+		if (e.getSource() == clearButton) {
 			graph.clear();
 		}
 	}
