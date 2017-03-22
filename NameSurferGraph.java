@@ -19,7 +19,7 @@ public class NameSurferGraph extends GCanvas
 	*/
 	public NameSurferGraph() {
 		addComponentListener(this);
-		colorRotation = 0;
+		graphEntries = new ArrayList<NameSurferEntry>();
 		update();
 	}
 	
@@ -62,21 +62,18 @@ public class NameSurferGraph extends GCanvas
 		GLine lowerMargin = new GLine(0, getHeight() - GRAPH_MARGIN_SIZE, getWidth(), getHeight() - GRAPH_MARGIN_SIZE);
 		add(upperMargin);
 		add(lowerMargin);
-		for (int i = 0; i < 4; i++) {
-			
-		}
+		drawLines();
 	}
 	
-	private void drawLine() {
-		for (int i = 0; i < NDECADES - 1; i++) {
-			if ()
+	private void drawLines() {
+		for (int i = 0; i < graphEntries.size(); i++) {
+			for (int j = 0; j < NDECADES - 1; j ++) {
+				if (graphEntries[i].getRank[j] == 0 || )
+			}
 		}
 	}
 	
 	private ArrayList<NameSurferEntry> graphEntries;
-	
-	private int colorRotation;
-	
 	
 	/* Implementation of the ComponentListener interface */
 	public void componentHidden(ComponentEvent e) { }
