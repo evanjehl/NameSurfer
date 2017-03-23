@@ -82,6 +82,9 @@ public class NameSurferGraph extends GCanvas
 	}
 	
 	private void drawLines() {
+		ArrayList<GPoint> points = new ArrayList<GPoint>();
+		ArrayList<GLabel> labels = new ArrayList<GLabel>();
+		ArrayList<GLine> lines = new ArrayList<GLine>();
 		for (int i = 0; i < graphEntries.size(); i++) {
 			ArrayList<GPoint> points = new ArrayList<GPoint>();
 			ArrayList<GLabel> labels = new ArrayList<GLabel>();
@@ -115,6 +118,12 @@ public class NameSurferGraph extends GCanvas
 	private ArrayList<NameSurferEntry> graphEntries;
 	
 	private HashMap<NameSurferEntry, Color> graphColors;
+	
+	private ArrayList<GPoint> points;
+	
+	private ArrayList<GLabel> labels;
+	
+	private ArrayList<GLine> lines;
 	
 	/* Implementation of the ComponentListener interface */
 	public void componentHidden(ComponentEvent e) { }
