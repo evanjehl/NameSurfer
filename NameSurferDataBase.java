@@ -48,9 +48,9 @@ public class NameSurferDataBase implements NameSurferConstants {
  */
 	public NameSurferEntry findEntry(String name) {
 		String firstLetter = name.substring(0, 1);
-		firstLetter.toUpperCase();
+		firstLetter = firstLetter.toUpperCase();
 		String remainingLetters = name.substring(1, name.length());
-		remainingLetters.toLowerCase();
+		remainingLetters = remainingLetters.toLowerCase();
 		name = firstLetter.concat(remainingLetters);
 		System.out.println(name);
 		if (database.containsKey(name)) {
