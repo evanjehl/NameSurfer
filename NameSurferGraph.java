@@ -57,8 +57,6 @@ public class NameSurferGraph extends GCanvas
 		update();
 	}
 	
-	
-	
 	/**
 	* Updates the display image by deleting all the graphical objects
 	* from the canvas and then reassembling the display according to
