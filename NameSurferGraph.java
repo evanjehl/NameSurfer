@@ -85,6 +85,7 @@ public class NameSurferGraph extends GCanvas
 		for (int i = 0; i < graphEntries.size(); i++) {
 			ArrayList<GPoint> points = new ArrayList<GPoint>();
 			ArrayList<GLabel> labels = new ArrayList<GLabel>();
+			ArrayList<GLine> lines = new ArrayList<GLine>();
 			for (int j = 0; j < NDECADES; j++) {
 				if (graphEntries.get(i).getRank(j) == 0) {
 					points.add(new GPoint(getWidth() * j / 11, getHeight() - GRAPH_MARGIN_SIZE));
@@ -101,7 +102,9 @@ public class NameSurferGraph extends GCanvas
 					labels.get(j).setLocation(points.get(j).getX() + getWidth() / 400, points.get(j).getY() + getHeight() / 400 + labels.get(j).getAscent());
 				}
 			}
-			
+			for (int j = 0; j < NDECADES - 1; j++) {
+				
+			}
 		}
 	}
 	
