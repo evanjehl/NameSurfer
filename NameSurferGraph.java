@@ -78,7 +78,7 @@ public class NameSurferGraph extends GCanvas
 			}
 			for (int j = 0; j < NDECADES; j++) {
 				if (points.get(j).getY() >= points.get(j + 1).getY()) {
-					
+					l1 = new GLabel(graphEntries.get(i).getName() + " *");
 				}
 			}
 		}
