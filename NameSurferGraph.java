@@ -75,44 +75,14 @@ public class NameSurferGraph extends GCanvas
 				} else {
 					points.add(new GPoint(getWidth() * j / 11, ((getHeight() - GRAPH_MARGIN_SIZE) * graphEntries.get(i).getRank(j) / MAX_RANK) + GRAPH_MARGIN_SIZE));
 				}
-				if (graphEntries.get(i).getRank(j + 1) == 0) {
-					p2 = new GPoint(getWidth() * (j + 1) / 11, getHeight() - GRAPH_MARGIN_SIZE);
-					l2 = new GLabel(graphEntries.get(i).getName() + " *", p2.getX() + 2, p2.getY() + 2);
-				} else {
-					p2 = new GPoint(getWidth() * (j + 1) / 11, ((getHeight() - GRAPH_MARGIN_SIZE) * graphEntries.get(i).getRank(j + 1) / MAX_RANK) + GRAPH_MARGIN_SIZE);
-					l2 = new GLabel(graphEntries.get(i).getName() + " " + graphEntries.get(i).getRank(j + 1), p2.getX() + 2, p2.getY() + 2);
-				}
-				GLine line = new GLine(p1.getX(), p1.getY(), p2.getX(), p2.getY());
-				switch(i % 4) {
-					case 0:
-						line.setColor(Color.BLACK);
-						l1.setColor(Color.BLACK);
-						l2.setColor(Color.BLACK);
-						break;
-					case 1:
-						line.setColor(Color.RED);
-						l1.setColor(Color.RED);
-						l2.setColor(Color.RED);
-						break;
-					case 2:
-						line.setColor(Color.BLUE);
-						l1.setColor(Color.BLUE);
-						l2.setColor(Color.BLUE);
-						break;
-					case 3:
-						line.setColor(Color.MAGENTA);
-						l1.setColor(Color.MAGENTA);
-						l2.setColor(Color.MAGENTA);
-						break;
-				}
-				add(line);
-				add(l1);
-				add(l2);
 			}
+			
 		}
 	}
 	
 	private ArrayList<NameSurferEntry> graphEntries;
+	
+	
 	
 	/* Implementation of the ComponentListener interface */
 	public void componentHidden(ComponentEvent e) { }
