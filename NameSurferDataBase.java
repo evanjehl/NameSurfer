@@ -46,7 +46,7 @@ public class NameSurferDataBase implements NameSurferConstants {
  * exists.  If the name does not appear in the database, this
  * method returns null.
  */
-	public NameSurferEntry findEntry(String nameQuery) {
+	public NameSurferEntry findEntry(String name) {
 		if (database.containsKey(name)) {
 			return database.get(name);
 		} else {
