@@ -50,6 +50,8 @@ public class NameSurferDataBase implements NameSurferConstants {
 		String firstLetter = name.substring(0, 1);
 		firstLetter.toUpperCase();
 		String remainingLetters = name.substring(1, name.length());
+		remainingLetters.toLowerCase();
+		
 		if (database.containsKey(name)) {
 			return database.get(name);
 		} else {
