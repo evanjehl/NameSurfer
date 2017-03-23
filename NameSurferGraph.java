@@ -72,10 +72,8 @@ public class NameSurferGraph extends GCanvas
 			for (int j = 0; j < NDECADES; j++) {
 				if (graphEntries.get(i).getRank(j) == 0) {
 					points.add(new GPoint(getWidth() * j / 11, getHeight() - GRAPH_MARGIN_SIZE));
-					l1 = new GLabel(graphEntries.get(i).getName() + " *", p1.getX() + 2, p1.getY() + 2);
 				} else {
-					p1 = new GPoint(getWidth() * j / 11, ((getHeight() - GRAPH_MARGIN_SIZE) * graphEntries.get(i).getRank(j) / MAX_RANK) + GRAPH_MARGIN_SIZE);
-					l1 = new GLabel(graphEntries.get(i).getName() + " " + graphEntries.get(i).getRank(j), p1.getX() + 2, p1.getY() + 2);
+					points.add(new GPoint(getWidth() * j / 11, ((getHeight() - GRAPH_MARGIN_SIZE) * graphEntries.get(i).getRank(j) / MAX_RANK) + GRAPH_MARGIN_SIZE));
 				}
 				if (graphEntries.get(i).getRank(j + 1) == 0) {
 					p2 = new GPoint(getWidth() * (j + 1) / 11, getHeight() - GRAPH_MARGIN_SIZE);
