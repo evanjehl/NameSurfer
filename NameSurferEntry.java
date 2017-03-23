@@ -32,7 +32,7 @@ public class NameSurferEntry implements NameSurferConstants {
 			}
 			rankings[i] = Integer.parseInt(line.substring(tokenStart, tokenEnd));
 		}
-		GCompound graph = new GCompound();
+		graph = new GCompound();
 	}
 
 /* Method: getName() */
@@ -72,5 +72,7 @@ public class NameSurferEntry implements NameSurferConstants {
 	private String name;
 	
 	private int[] rankings;
+	
+	private GCompound graph;
 }
 
