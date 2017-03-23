@@ -6,10 +6,7 @@
  * of that name for each decade stretching back to 1900.
  */
 
-import acm.graphics.*;
 import acm.util.*;
-
-import java.awt.*;
 import java.util.*;
 
 public class NameSurferEntry implements NameSurferConstants {
@@ -34,7 +31,6 @@ public class NameSurferEntry implements NameSurferConstants {
 			}
 			rankings[i] = Integer.parseInt(line.substring(tokenStart, tokenEnd));
 		}
-		graph = new GCompound();
 	}
 
 /* Method: getName() */
