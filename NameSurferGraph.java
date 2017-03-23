@@ -95,6 +95,15 @@ public class NameSurferGraph extends GCanvas
 					labels.add(new GLabel(graphEntries.get(i).getName() + " " + graphEntries.get(i).getRank(j)));
 				}
 			}
+			for (int j = 0; j < NDECADES; j++) {
+				if (points.get(j).getY() >= points.get(j + 1).getY()) {
+					labels.get(j).setLocation(points.get(j).getX() + getWidth() / 400, points.get(j).getY() - getHeight() / 400 - labels.get(j).getAscent());
+				} else {
+					labels.get(j).setLocation(points.get(j).getX() + getWidth() / 400, points.get(j).getY() + getHeight() / 400 + labels.get(j).getAscent());
+				}
+				labels.get(j).setColor(graphColors.get(graphEntries.get(i)));
+				add(labels.get(j));
+			}
 		}
 	}
 	
