@@ -101,6 +101,7 @@ public class NameSurferGraph extends GCanvas
 				} else {
 					labels.get(j).setLocation(points.get(j).getX() + getWidth() / 400, points.get(j).getY() + getHeight() / 400 + labels.get(j).getAscent());
 				}
+				labels.get(j).setColor(graphColors.get(graphEntries.get(i)));
 			}
 			for (int j = 0; j < NDECADES - 1; j++) {
 				lines.add(new GLine(points.get(j).getX(), points.get(j).getY(), points.get(j + 1).getX(), points.get(j + 1).getY()));
