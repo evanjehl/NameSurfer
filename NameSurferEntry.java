@@ -74,9 +74,5 @@ public class NameSurferEntry implements NameSurferConstants {
 	private String name;
 	
 	private int[] rankings;
-	
-	private GCompound graph;
-	
-	private Color color;
 }
 
