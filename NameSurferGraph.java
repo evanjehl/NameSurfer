@@ -52,6 +52,7 @@ public class NameSurferGraph extends GCanvas
 				break;
 			case 0:
 				graphColors.put(entry, Color.MAGENTA);
+				break;
 		}
 		update();
 	}
