@@ -68,10 +68,10 @@ public class NameSurferGraph extends GCanvas
 	
 	private void drawLines() {
 		for (int i = 0; i < graphEntries.size(); i++) {
+			ArrayList<GPoint> points = new ArrayList<GPoint>();
 			for (int j = 0; j < NDECADES; j++) {
-				ArrayList<GPoint> points = new ArrayList<GPoint>();
 				if (graphEntries.get(i).getRank(j) == 0) {
-					p1 = new GPoint(getWidth() * j / 11, getHeight() - GRAPH_MARGIN_SIZE);
+					points.add(new GPoint(getWidth() * j / 11, getHeight() - GRAPH_MARGIN_SIZE));
 					l1 = new GLabel(graphEntries.get(i).getName() + " *", p1.getX() + 2, p1.getY() + 2);
 				} else {
 					p1 = new GPoint(getWidth() * j / 11, ((getHeight() - GRAPH_MARGIN_SIZE) * graphEntries.get(i).getRank(j) / MAX_RANK) + GRAPH_MARGIN_SIZE);
