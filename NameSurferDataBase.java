@@ -47,16 +47,11 @@ public class NameSurferDataBase implements NameSurferConstants {
  * method returns null.
  */
 	public NameSurferEntry findEntry(String nameQuery) {
-		String name = standardizeCase(nameQuery);
 		if (database.containsKey(name)) {
 			return database.get(name);
 		} else {
 			return null;
 		}
-	}
-	
-	private String standardizeCase(String nameQuery) {
-		
 	}
 	
 	private BufferedReader openFileReader(String file) {
