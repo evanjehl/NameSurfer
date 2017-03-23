@@ -107,7 +107,6 @@ public class NameSurferGraph extends GCanvas
 				lines.add(new GLine(points.get(j).getX(), points.get(j).getY(), points.get(j + 1).getX(), points.get(j + 1).getY()));
 				lines.get(j).setColor(graphColors.get(graphEntries.get(i)));
 			}
-			
 		}
 	}
 	
