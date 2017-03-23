@@ -103,8 +103,9 @@ public class NameSurferGraph extends GCanvas
 				}
 			}
 			for (int j = 0; j < NDECADES - 1; j++) {
-				
+				lines.add(new GLine(points.get(j).getX(), points.get(j).getY(), points.get(j + 1).getX(), points.get(j + 1).getY()));
 			}
+			
 		}
 	}
 	
