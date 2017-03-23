@@ -86,6 +86,7 @@ public class NameSurferGraph extends GCanvas
 					labels.get(j).setLocation(points.get(j).getX() + getWidth() / 400, points.get(j).getY() + getHeight() / 400 + labels.get(j).getAscent());
 				}
 			}
+			
 		}
 	}
 	
