@@ -8,6 +8,8 @@
 
 import acm.graphics.*;
 import acm.util.*;
+
+import java.awt.*;
 import java.util.*;
 
 public class NameSurferEntry implements NameSurferConstants {
@@ -74,5 +76,7 @@ public class NameSurferEntry implements NameSurferConstants {
 	private int[] rankings;
 	
 	private GCompound graph;
+	
+	private Color color;
 }
 
