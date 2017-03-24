@@ -20,7 +20,6 @@ public class NameSurferGraph extends GCanvas
 	public NameSurferGraph() {
 		addComponentListener(this);
 		graphEntries = new HashMap<String, NameSurferEntry>();
-		graphColors = new HashMap<NameSurferEntry, Color>();
 		update();
 	}
 	
@@ -118,8 +117,6 @@ public class NameSurferGraph extends GCanvas
 	}
 	
 	private HashMap<String, NameSurferEntry> graphEntries;
-	
-	private HashMap<NameSurferEntry, Color> graphColors;
 	
 	private ArrayList<GPoint> points;
 	
