@@ -47,6 +47,9 @@ public class NameSurfer extends Program implements NameSurferConstants {
 				graph.addEntry(entry);
 			}
 		}
+		if (e.getActionCommand().equals("Remove")) {
+			
+		}
 		if (e.getActionCommand().equals("Clear")) {
 			graph.clear();
 		}
