@@ -42,7 +42,7 @@ public class NameSurferGraph extends GCanvas
 		graphEntries.put(entry.getName(), entry);
 		switch(graphEntries.size() % 4) {
 			case 1:
-				graphColors.put(entry, Color.BLACK);
+				entry.setColor(Color.BLACK);
 				break;
 			case 2:
 				graphColors.put(entry, Color.RED);
