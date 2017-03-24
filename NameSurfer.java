@@ -42,7 +42,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
  */
 	public void actionPerformed(ActionEvent e) {
 		if (e.getActionCommand().equals("Graph")) {
-			NameSurferEntry entry = database.findEntry(nameField.getText());
+			NameSurferEntry entry = database.findEntry(standardizeCase(nameField.getText()));
 			if (entry != null) {
 				graph.addEntry(entry);
 			}
@@ -53,6 +53,14 @@ public class NameSurfer extends Program implements NameSurferConstants {
 		if (e.getActionCommand().equals("Clear")) {
 			graph.clear();
 		}
+	}
+	
+	private String standardizeCase(String name) {
+		String firstLetter = name.substring(0, 1);
+		firstLetter = firstLetter.toUpperCase();
+		String remainingLetters = name.substring(1, name.length());
+		remainingLetters = remainingLetters.toLowerCase();
+		name = firstLetter.concat(remainingLetters);
 	}
 	
 	private JTextField nameField;
