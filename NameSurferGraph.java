@@ -117,7 +117,7 @@ public class NameSurferGraph extends GCanvas
 		}
 	}
 	
-	private ArrayList<NameSurferEntry> graphEntries;
+	private HashMap<String, NameSurferEntry> graphEntries;
 	
 	private HashMap<NameSurferEntry, Color> graphColors;
 	
