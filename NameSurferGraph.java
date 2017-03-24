@@ -103,7 +103,7 @@ public class NameSurferGraph extends GCanvas
 			}
 			for (int j = 0; j < NDECADES; j++) {
 				if (j < NDECADES - 1) {
-					if (points.get(j).getY() >= points.get(j + 1).getY()) {
+					if (points.get(j).getY() >= points.get(j + 1).getY() && points.get(j).getY() < (getHeight() - GRAPH_MARGIN_SIZE)) {
 						labels.get(j).setLocation(points.get(j).getX() + getWidth() / 400, points.get(j).getY() + getHeight() / 400 + labels.get(j).getAscent());
 					} else {
 						labels.get(j).setLocation(points.get(j).getX() + getWidth() / 400, points.get(j).getY() - getHeight() / 400 - labels.get(j).getDescent());
