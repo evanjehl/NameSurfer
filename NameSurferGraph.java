@@ -20,6 +20,7 @@ public class NameSurferGraph extends GCanvas
 	public NameSurferGraph() {
 		addComponentListener(this);
 		graphEntries = new HashMap<String, NameSurferEntry>();
+		colorCounter = 0;
 		update();
 	}
 	
