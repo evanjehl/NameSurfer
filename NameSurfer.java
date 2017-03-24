@@ -61,6 +61,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
 		String remainingLetters = name.substring(1, name.length());
 		remainingLetters = remainingLetters.toLowerCase();
 		name = firstLetter.concat(remainingLetters);
+		return name;
 	}
 	
 	private JTextField nameField;
