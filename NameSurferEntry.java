@@ -53,6 +53,10 @@ public class NameSurferEntry implements NameSurferConstants {
 	public int getRank(int decade) {
 		return rankings[decade];
 	}
+	
+	public void setColor(Color color) {
+		color = color;
+	}
 
 /* Method: toString() */
 /**
@@ -72,6 +76,6 @@ public class NameSurferEntry implements NameSurferConstants {
 	
 	private int[] rankings;
 	
-	private Color color;
+	private Color graphColor;
 }
 
