@@ -27,6 +27,7 @@ public class NameSurfer extends Program implements NameSurferConstants {
 	    add(name, SOUTH);
 	    add(nameField, SOUTH);
 	    add(new JButton("Graph"), SOUTH);
+	    add(new JButton("Remove"), SOUTH);
 	    add(new JButton("Clear"), SOUTH);
 	    graph = new NameSurferGraph();
 	    add(graph);
