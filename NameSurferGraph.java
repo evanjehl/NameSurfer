@@ -40,7 +40,7 @@ public class NameSurferGraph extends GCanvas
 	*/
 	public void addEntry(NameSurferEntry entry) {
 		graphEntries.put(entry.getName(), entry);
-		switch(graphEntries.size() % 4) {
+		switch(colorCounter % 4) {
 			case 0:
 				entry.setColor(Color.BLACK);
 				break;
