@@ -131,6 +131,8 @@ public class NameSurferGraph extends GCanvas
 	
 	private ArrayList<GLine> lines;
 	
+	private int colorCounter;
+	
 	/* Implementation of the ComponentListener interface */
 	public void componentHidden(ComponentEvent e) { }
 	public void componentMoved(ComponentEvent e) { }
