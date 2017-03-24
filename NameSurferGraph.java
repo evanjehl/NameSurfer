@@ -102,7 +102,7 @@ public class NameSurferGraph extends GCanvas
 				} else {
 					labels.get(j).setLocation(points.get(j).getX() + getWidth() / 400, points.get(j).getY() - getHeight() / 400 - labels.get(j).getDescent());
 				}
-				labels.get(j).setColor(graphColors.get(graphEntries.get(i)));
+				labels.get(j).setColor(graphEntries.get(name).getColor());
 				add(labels.get(j));
 			}
 			for (int j = 0; j < NDECADES - 1; j++) {
