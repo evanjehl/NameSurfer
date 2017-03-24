@@ -89,7 +89,7 @@ public class NameSurferGraph extends GCanvas
 					labels.add(new GLabel(graphEntries.get(name).getName() + " *"));
 				} else {
 					points.add(new GPoint(getWidth() * j / 11, ((getHeight() - GRAPH_MARGIN_SIZE) * graphEntries.get(name).getRank(j) / MAX_RANK) + GRAPH_MARGIN_SIZE));
-					labels.add(new GLabel(graphEntries.get(name).getName() + " " + graphEntries.get(name).getRank(name)));
+					labels.add(new GLabel(graphEntries.get(name).getName() + " " + graphEntries.get(name).getRank(j)));
 				}
 			}
 			for (int j = 0; j < NDECADES; j++) {
