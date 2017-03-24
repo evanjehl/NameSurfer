@@ -57,6 +57,10 @@ public class NameSurferEntry implements NameSurferConstants {
 	public void setColor(Color color) {
 		graphColor = color;
 	}
+	
+	public Color getColor() {
+		return graphColor;
+	}
 
 /* Method: toString() */
 /**
