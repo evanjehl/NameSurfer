@@ -9,6 +9,7 @@
 import acm.util.*;
 import java.util.*;
 
+
 public class NameSurferEntry implements NameSurferConstants {
 
 /* Constructor: NameSurferEntry(line) */
@@ -70,5 +71,7 @@ public class NameSurferEntry implements NameSurferConstants {
 	private String name;
 	
 	private int[] rankings;
+	
+	private Color color;
 }
 
