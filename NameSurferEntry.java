@@ -7,10 +7,8 @@
  */
 
 import acm.util.*;
-
-import java.awt.*;
 import java.util.*;
-
+import java.awt.*;
 
 public class NameSurferEntry implements NameSurferConstants {
 
