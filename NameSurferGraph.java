@@ -56,6 +56,12 @@ public class NameSurferGraph extends GCanvas
 		update();
 	}
 	
+	public void remove(String name) {
+		if (graphEntries.containsKey(name)) {
+			
+		}
+	}
+	
 	/**
 	* Updates the display image by deleting all the graphical objects
 	* from the canvas and then reassembling the display according to
