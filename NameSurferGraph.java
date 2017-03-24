@@ -82,6 +82,7 @@ public class NameSurferGraph extends GCanvas
 		points = new ArrayList<GPoint>();
 		labels = new ArrayList<GLabel>();
 		lines = new ArrayList<GLine>();
+		Iterator<String> it = graphEntries.keySet().iterator();
 		for (int i = 0; i < graphEntries.size(); i++) {
 			for (int j = 0; j < NDECADES; j++) {
 				if (graphEntries.get(i).getRank(j) == 0) {
