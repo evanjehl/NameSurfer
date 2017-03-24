@@ -58,7 +58,8 @@ public class NameSurferGraph extends GCanvas
 	
 	public void remove(String name) {
 		if (graphEntries.containsKey(name)) {
-			
+			graphEntries.remove(name);
+			update();
 		}
 	}
 	
